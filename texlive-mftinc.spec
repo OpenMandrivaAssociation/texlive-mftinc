@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/mftinc
+# catalog-date 2007-01-11 00:21:49 +0100
+# catalog-license lppl
+# catalog-version 1.0a
 Name:		texlive-mftinc
 Version:	1.0a
 Release:	1
@@ -46,6 +52,7 @@ tables.
 #- source
 %doc %{_texmfdistdir}/source/latex/mftinc/mftinc.dtx
 %doc %{_texmfdistdir}/source/latex/mftinc/mftinc.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ tables.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
