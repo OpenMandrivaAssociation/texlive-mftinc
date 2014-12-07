@@ -6,7 +6,7 @@
 # catalog-version 1.0a
 Name:		texlive-mftinc
 Version:	1.0a
-Release:	8
+Release:	9
 Summary:	Pretty-print Metafont source
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mftinc
